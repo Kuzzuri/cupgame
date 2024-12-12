@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    background-image: radial-gradient(rgb(139, 236, 255), rgb(127, 213, 250));
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 1221px;
+}
+.header{
+    padding: 1rem 2rem;
+    font-size: 3.5rem;
+    background-image: linear-gradient(320deg, red 0%, purple 100%);
+    color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+}
+.game{
+    width: 700px;
+    height: 270px;
+}
+button{
+    font-size: 3rem;
+    background-color: rgb(247, 130, 227);
+    padding: 0px 9px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1000;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.score{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.result{
+    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.resultWin{
+    color: rgb(50, 200, 50);
+    text-shadow: 4px 4px 7px rgb(100, 249, 100);
+}
+.resultLose{
+    color: rgb(255, 0, 0);
+    text-shadow: 4px 4px 7px rgb(249, 100, 100);
+}
+.cups{
+    transform: rotate(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cupsUp{
+    height: 20vh;
+}
+.cupsDown{
+    height: 40vh;
+    margin-bottom: -150px;
+    position: relative;
+    z-index: 0;
+}
+#cup1{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    cursor: pointer;
+}
+#cup2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    cursor: pointer;
+}
+#cup3{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    cursor: pointer;
+}
+.sectorOne{
+    transform: translateX(150px);
+    transition: 0.5s;
+}
+.sectorTwo{
+    transform: translateX(0px);
+    transition: 0.5s;
+}
+.sectorThree{
+    transform: translateX(-150px);
+    transition: 0.5s;
+}
+.balls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7.5rem;
+}
+.classChecked{
+    z-index: 1;
+}
+.displaySikici{
+    display: none;
+}
+#ball1{
+    color: red;
+}
+#ball2{
+    color: white;
+}
+#ball3{
+    color: white;
+}
+.gameActive{
+    scrollbar-highlight-color: aliceblue;
+}
+.gameUnActive{
+    scrollbar-highlight-color: rgb(71, 82, 93);
+}
+button:hover{
+    background-color: rgb(183, 126, 235);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0,0.7);
+    transform: translate(-2px, -2px);
+    transition: all 0.5s ease;
+}
+button:active{
+    background-color: rgb(173, 105, 237);
+}
+.hidden{
+    visibility: hidden;
+}
+#cup1:hover{
+    filter: drop-shadow(-5px -5px 5px rgba(0, 0, 0,0.7));
+}
+#cup2:hover{
+    filter: drop-shadow(-5px -5px 5px rgba(0, 0, 0,0.7));
+}
+#cup3:hover{
+    filter: drop-shadow(-5px -5px 5px rgba(0, 0, 0,0.7));
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    gap: 25px;
+}
+a{
+    text-decoration: none;
+}
+@media (max-height: 600px){
+    .balls{
+        position: relative;
+        top: 50px;
+    }
+}
+@media (max-height: 400px){
+    .button{
+        position: relative;
+        bottom: 100px;
+    }
+}
+@media (max-height: 700px){
+    footer{
+        position: absolute;
+        bottom: -100px;
+    }
+}
+    
