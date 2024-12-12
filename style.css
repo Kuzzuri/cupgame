@@ -182,4 +182,48 @@ a{
         bottom: -100px;
     }
 }
+@media (max-width: 700px) {
+    footer{
+        position: absolute;
+        bottom: -250px;
+        left: 25px;
+    }
+    .container{
+        position: relative;
+        left: 50px;
+    }
+}
+@media (max-width: 500px) {
+    footer{
+        position: absolute;
+        bottom: -500px;
+        left: 25px;
+    }
+    .container{
+        position: relative;
+        left: 90px;
+    }
+}
+@media (max-width: 400px) {
+    footer{
+        position: absolute;
+        bottom: -500px;
+        left: 25px;
+    }
+    .container{
+        position: relative;
+        left: 120px;
+    }
+}
+@media (max-width: 300px) {
+    footer{
+        position: absolute;
+        bottom: -500px;
+        left: 25px;
+    }
+    .container{
+        position: relative;
+        left: 150px;
+    }
+}
     
